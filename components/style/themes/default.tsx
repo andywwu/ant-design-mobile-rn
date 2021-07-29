@@ -167,6 +167,9 @@ export default {
 
   // switch
   switch_fill: '#4dd865',
+  switch_unchecked: '#cccccc',
+  switch_unchecked_disabled: '#cccccc66', // switch_fill的40%透明度
+  switch_checked_disabled: '#4dd86566', // switch_unchecked的40%透明度
 
   // tag
   tag_height: 25,
