@@ -34,6 +34,7 @@
     "@ant-design/icons-react-native": "^2.3.1",
     "@bang88/react-native-ultimate-listview": "^4.0.0",
     "@types/shallowequal": "^1.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
     "array-tree-filter": "~2.1.0",
     "babel-runtime": "^6.x",
     "deepmerge": "^4.2.2",
@@ -50,7 +51,6 @@
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/cameraroll": "^4.0.4",
-    "@react-native-community/eslint-config": "^2.0.0",
     "@react-native-community/masked-view": "^0.1.9",
     "@react-native-community/segmented-control": "^2.2.2",
     "@react-native-community/slider": "^3.0.3",
@@ -83,6 +83,7 @@
     "mockdate": "^2.0.1",
     "pre-commit": "1.x",
     "react": "17.0.2",
+    "react-app-rewired": "^2.1.11",
     "react-copy-to-clipboard": "^5.0.0",
     "react-document-title": "^2.0.1",
     "react-dom": "17.0.2",
@@ -95,6 +96,8 @@
     "react-native-reanimated": "^2.2.0",
     "react-native-safe-area-context": "^3.2.0",
     "react-native-screens": "^3.3.0",
+    "react-native-web": "^0.17.5",
+    "react-scripts": "^5.0.0",
     "react-test-renderer": "17.0.2",
     "shell-utils": "^1.0.10",
     "ts-jest": "^25.4.0",
@@ -129,6 +132,7 @@
     "rn-start": "node scripts/start.js",
     "ios": "concurrently \"npm run watch-tsc\" \"npm run _ios\"",
     "android": "concurrently \"npm run watch-tsc\" \"npm run _android\"",
+    "web": "react-app-rewired start",
     "_ios": "npx react-native run-ios --project-path rn-kitchen-sink/ios --scheme KitchenSink",
     "_android": "react-native run-android",
     "lint-staged": "lint-staged",
@@ -150,5 +154,17 @@
   ],
   "resolutions": {
     "graceful-fs": "^4.2.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

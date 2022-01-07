@@ -1,7 +1,9 @@
 /* tslint:disable:no-unused-variable */
 
 import React from 'react'
-import { Button, WhiteSpace, WingBlank } from '../../'
+import Button from '../../button'
+import WhiteSpace from '../../white-space'
+import WingBlank from '../../wing-blank'
 
 /* tslint:disable:no-console */
 export default () => (
