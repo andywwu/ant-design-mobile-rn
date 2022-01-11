@@ -131,7 +131,7 @@
     "rn-start": "node scripts/start.js",
     "ios": "concurrently \"npm run watch-tsc\" \"npm run _ios\"",
     "android": "concurrently \"npm run watch-tsc\" \"npm run _android\"",
-    "web": "react-app-rewired start",
+    "web": "concurrently \"npm run watch-tsc\" \"react-app-rewired start\"",
     "_ios": "npx react-native run-ios --project-path rn-kitchen-sink/ios --scheme KitchenSink",
     "_android": "react-native run-android",
     "lint-staged": "lint-staged",
