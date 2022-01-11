@@ -48,6 +48,8 @@
   "devDependencies": {
     "@ant-design/tools": "^13.4.1-beta.0",
     "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/preset-react": "^7.16.7",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/cameraroll": "^4.0.4",
     "@react-native-community/masked-view": "^0.1.9",
